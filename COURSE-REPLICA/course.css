@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    font-size: .7rem;
+    height: 1200px;
+}
+
+a {
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus:not(.comp-name) {
+    text-decoration: underline;
+}
+
+.banner {
+    background-color: forestgreen;
+    background-image:  linear-gradient(rgba(0,0,0,.37), rgba(0,0,0,.37)), url(images/bg_laptop-bbb6b13c3417230eabcb19180577263e.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.nav-container {
+    background-color: forestgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    line-height: 1.68em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;  
+    box-shadow: 1px 1px 6px 0 rgba(0,0,0,.25);
+}
+
+label {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+ #toggle:checked + .main-nav {
+   transform: scale(1,1);
+}
+
+.main-nav {
+    transform: scale(1, 0);
+    background-color: forestgreen;
+    position: absolute;
+    top: 4.9em;
+    left: 0;
+    width: 100%;
+    font-weight: 600;
+    box-shadow: 1px 1px 6px 0 rgba(0,0,0,.25);
+    transition: 250ms ease-in;
+    transform-origin: top;
+}
+
+.main-nav ul li {
+    padding: 1em;
+}
+
+.main-nav ul li:not(.exempt) {
+     border-top: 1px solid rgb(224,224,224,.1);
+}
+
+.main-nav li input[type="search"] {
+    border-radius: 3px;
+    border: none;
+    padding: 0.4em 1em;
+    font-size: inherit;
+    color: #999
+}
+
+.main-nav .sub-menu-wrapper {
+    position: relative;
+    width: max-width;
+}
+
+.main-nav .sub-menu-wrapper:hover .sub-menu {
+    display: block;
+}
+
+.main-nav .sub-menu {
+    list-style: none;
+    font-weight: 400;
+    display: none;
+    position: relative;
+    left: 10px;
+}
+
+.main-nav .sub-menu-wrapper .sub-menu li {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.main-nav .sub-menu li:first-of-type {
+    margin-top: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    width: 100%;
+}
+
+.main-nav .sub-menu li>span {
+    display: inline-block;
+    font-weight: 600;
+    padding-top: 1em; 
+    margin-bottom: 5px;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    text-decoration: underline;
+}
+
+.banner-image-text {
+    width: 100%;
+    padding-top: 6em;
+   // padding-bottom: 1em;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 0.73rem;
+}
+
+.wrapper>p {
+    margin: 1.5em 0;
+}
+
+.social-media {
+    background-color: forestgreen;
+    padding: 0.62em;
+}
+
+.social-media>.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social ul {
+    width: 70%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 800;
+}
+
+.social ul li a i {
+    font-size: .9rem
+}
+
+.main-article {
+    background-color: bisque;
+    font-size: 0.8em;
+    line-height: 1.78em;
+    padding-bottom: 1em;
+    color: rgba(0,0,0,.5);
+}
+
+.main-article h3 {
+    color: #000;
+}
+
+.image-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-article .content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 1.5em;
+}
+
+.content p {
+    margin-top: 1.5em;
+}
+
+.content a {
+    color: forestgreen;
+    font-weight: 600;
+    border: 1px solid currentcolor;
+    padding: 0.2em 0.5em;
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 0.5rem;
+    border-radius: 3px;
+}
+
+.content a:hover {
+    background-color: rgba(0,0,0,.05);
+}
+
+footer {
+    margin-top: 4em;
+}
+
+footer>p {
+    margin-bottom: 1em;
+    font-size: 0.7rem;
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.image-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-text-wrapper>p {
+    width: 65%;
+    margin: 0;
+}
+
+.image-text-wrapper p a {
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+}
+
+.image-text-wrapper>img {
+    width: 30%;
+    border-radius: 3px;
+}
+
+
+
